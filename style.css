@@ -1,0 +1,640 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  scroll-behavior: smooth;
+}
+@media (max-width: 3000px) {
+  h1 {
+    font-family: "Julius Sans One", sans-serif;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .nav-color {
+    background-color: #b4b4b3bc;
+    display: flex;
+    justify-content: space-between;
+  }
+  .p-5 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  li a::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--bs-navbar-active-color);
+    margin: auto;
+    display: block;
+    opacity: 0.3;
+    transition: width 0.3s ease-in;
+  }
+  li a:hover::after {
+    width: 100%;
+  }
+  #home {
+    width: 100%;
+    height: 89vh;
+  }
+  .container-fluid {
+    margin: 0;
+  }
+  .bg-home1 {
+    width: 30%;
+    height: 89vh;
+    background-color: #eadbc8;
+    margin: 0;
+    position: relative;
+    left: 0;
+  }
+  .bg-home2 {
+    width: 70%;
+    height: 80vh;
+    margin: 0;
+    position: relative;
+    left: 0;
+  }
+  .personal-card {
+    right: 20px;
+  }
+  .card {
+    height: 60vh;
+    background-color: #f8f0e5;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgba(105, 105, 105, 0.3);
+  }
+  .txt-name {
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: "Julius Sans One", sans-serif;
+    margin-bottom: 0;
+  }
+  .txt-name-personal {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Julius Sans One", sans-serif;
+  }
+  .txt-personal {
+    margin-left: 280px;
+    margin-top: 320px;
+  }
+  .bi {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+  .bi:hover {
+    opacity: 1;
+  }
+  #aboutme {
+    width: 100%;
+    height: 100vh;
+    font-family: "League Spartan", sans-serif;
+  }
+  .txt-aboutme {
+    line-height: 40px;
+  }
+  .h-about {
+    padding-top: 390px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  .h-c {
+    padding-top: 390px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  #experiences {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#fff, #f8f0e5);
+    font-family: "League Spartan", sans-serif;
+    padding-top: 120px;
+  }
+  #contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    font-family: "League Spartan", sans-serif;
+  }
+  footer {
+    width: 100%;
+    background-color: #f8f0e5;
+    font-family: "League Spartan", sans-serif;
+  }
+}
+@media (max-width: 1920px) {
+  h1 {
+    font-family: "Julius Sans One", sans-serif;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .nav-color {
+    background-color: #b4b4b3bc;
+    display: flex;
+    justify-content: space-between;
+  }
+  .p-5 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  li a::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--bs-navbar-active-color);
+    margin: auto;
+    display: block;
+    opacity: 0.3;
+    transition: width 0.3s ease-in;
+  }
+  li a:hover::after {
+    width: 100%;
+  }
+  #home {
+    width: 100%;
+    height: 89vh;
+  }
+  .container-fluid {
+    margin: 0;
+  }
+  .bg-home1 {
+    width: 30%;
+    height: 89vh;
+    background-color: #eadbc8;
+    margin: 0;
+    position: relative;
+    left: 0;
+  }
+  .bg-home2 {
+    width: 70%;
+    height: 80vh;
+    margin: 0;
+    position: relative;
+    left: 0;
+  }
+  .personal-card {
+    right: 20px;
+  }
+  .card {
+    height: 60vh;
+    background-color: #f8f0e5;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgba(105, 105, 105, 0.3);
+  }
+  .txt-name {
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: "Julius Sans One", sans-serif;
+    margin-bottom: 0;
+  }
+  .txt-name-personal {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Julius Sans One", sans-serif;
+  }
+  .txt-personal {
+    margin-left: 200px;
+    margin-top: 320px;
+  }
+  .bi {
+    opacity: 0.7;
+  }
+  .bi:hover {
+    opacity: 1;
+  }
+  #aboutme {
+    width: 100%;
+    height: 100vh;
+    font-family: "League Spartan", sans-serif;
+  }
+  .txt-aboutme {
+    line-height: 40px;
+  }
+  .h-about {
+    padding-top: 390px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  .h-c {
+    padding-top: 390px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  #experiences {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #f8f0e5; */
+    font-family: "League Spartan", sans-serif;
+    padding-top: 120px;
+  }
+  #contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    font-family: "League Spartan", sans-serif;
+  }
+  footer {
+    width: 100%;
+    background-color: #f8f0e5;
+    font-family: "League Spartan", sans-serif;
+  }
+}
+@media (max-width: 1280px) {
+  h1 {
+    font-family: "Julius Sans One", sans-serif;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .nav-color {
+    background-color: #b4b4b3bc;
+    display: flex;
+    justify-content: space-between;
+  }
+  .p-5 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  li a::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--bs-navbar-active-color);
+    margin: auto;
+    display: block;
+    opacity: 0.3;
+    transition: width 0.3s ease-in;
+  }
+  li a:hover::after {
+    width: 100%;
+  }
+  #home {
+    width: 100%;
+    height: 89vh;
+  }
+  .container-fluid {
+    margin: 0;
+  }
+  .bg-home1 {
+    width: 30%;
+    height: 89vh;
+    background-color: #eadbc8;
+    margin: 0;
+    position: relative;
+    left: 0;
+  }
+  .bg-home2 {
+    width: 70%;
+    height: 80vh;
+    margin: 0;
+    position: relative;
+    left: 0;
+  }
+  .personal-card {
+    right: 20px;
+  }
+  .card {
+    width: 150%;
+    height: 60vh;
+    background-color: #f8f0e5;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgba(105, 105, 105, 0.3);
+    right: 245px;
+  }
+  .card-body {
+    text-align: center;
+  }
+  .txt-name {
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: "Julius Sans One", sans-serif;
+    margin-bottom: 0;
+  }
+  .txt-name-personal {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Julius Sans One", sans-serif;
+  }
+  .txt-personal {
+    margin-left: 180px;
+    margin-top: 320px;
+  }
+  .bi {
+    opacity: 0.7;
+  }
+  .bi:hover {
+    opacity: 1;
+  }
+  #aboutme {
+    width: 100%;
+    height: 100vh;
+    font-family: "League Spartan", sans-serif;
+  }
+  .txt-aboutme {
+    line-height: 40px;
+  }
+  .h-about {
+    padding-top: 390px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  .h-c {
+    padding-top: 390px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  #experiences {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f0e5;
+    font-family: "League Spartan", sans-serif;
+    padding-top: 120px;
+  }
+  #contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    font-family: "League Spartan", sans-serif;
+  }
+  footer {
+    width: 100%;
+    background-color: #f8f0e5;
+    font-family: "League Spartan", sans-serif;
+  }
+}
+@media (max-width: 1023px) {
+  .card {
+    width: 150%;
+    height: 70vh;
+    background-color: #f8f0e5;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgba(105, 105, 105, 0.3);
+    right: 195px;
+  }
+  .txt-personal {
+    margin-left: 120px;
+    margin-top: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .bg-home1 {
+    width: 30%;
+    height: 100vh;
+    background-color: #eadbc8;
+    margin: 0;
+    position: relative;
+    left: 0;
+  }
+  .card {
+    width: 150%;
+    height: 70vh;
+    background-color: #f8f0e5;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgba(105, 105, 105, 0.3);
+    right: 195px;
+    display: none;
+  }
+  .txt-personal {
+    margin-left: 80px;
+    margin-top: 350px;
+  }
+}
+@media (max-width: 678px) {
+  h1 {
+    font-family: "Julius Sans One", sans-serif;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .nav-color {
+    background-color: #b4b4b3bc;
+    display: flex;
+    justify-content: space-between;
+  }
+  .p-5 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  #ab {
+    margin-bottom: 90px;
+  }
+  li a::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--bs-navbar-active-color);
+    margin: auto;
+    display: block;
+    opacity: 0.3;
+    transition: width 0.3s ease-in;
+  }
+  li a:hover::after {
+    width: 100%;
+  }
+  #home {
+    width: 100%;
+    height: 89vh;
+  }
+  .container-fluid {
+    margin: 0;
+  }
+  .bg-home1 {
+    width: 30%;
+    height: 89vh;
+    background-color: #eadbc8;
+    margin: 0;
+    position: relative;
+    left: 0;
+    display: none;
+  }
+  .bg-home2 {
+    width: 70%;
+    height: 80vh;
+    margin: 0;
+    position: relative;
+    left: 0;
+  }
+  .personal-card {
+    right: 20px;
+  }
+  .card {
+    width: 96.5vw;
+    height: 80vh;
+    background-color: #f8f0e5;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgba(105, 105, 105, 0.3);
+    right: 0px;
+    left: 61px;
+    display: inline-table;
+  }
+  .border-light {
+    margin-top: 0;
+    margin-left: 169.5px;
+    border-width: 100px;
+  }
+  .card-body {
+    text-align: center;
+  }
+  .txt-name {
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: "Julius Sans One", sans-serif;
+    margin-bottom: 0;
+  }
+  .txt-name-personal {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Julius Sans One", sans-serif;
+  }
+  .txt-personal {
+    margin-left: 180px;
+    margin-top: 320px;
+    display: none;
+  }
+  .bi {
+    opacity: 0.7;
+  }
+  .bi:hover {
+    opacity: 1;
+  }
+  #aboutme {
+    width: 100%;
+    height: 100vh;
+    font-family: "League Spartan", sans-serif;
+  }
+  .txt-aboutme {
+    line-height: 40px;
+  }
+  .h-about {
+    padding-top: 300px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  .h-c {
+    padding-top: 390px;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+  #experiences {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f0e5;
+    font-family: "League Spartan", sans-serif;
+    padding-top: 55px;
+  }
+  #ex-text {
+    font-size: 23px;
+  }
+  #contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    font-family: "League Spartan", sans-serif;
+  }
+  footer {
+    width: 100%;
+    background-color: #f8f0e5;
+    font-family: "League Spartan", sans-serif;
+  }
+}
+@media (max-width: 425px) {
+  .card {
+    width: 99vw;
+    height: 80vh;
+    background-color: #f8f0e5;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgba(105, 105, 105, 0.3);
+    right: 0px;
+    left: 36px;
+    display: inline-table;
+  }
+  .border-light {
+    margin-top: 0;
+    margin-left: 112px;
+  }
+  .h-about {
+    padding-top: 200px;
+  }
+  #ab {
+    margin-bottom: 140px;
+  }
+  #ex-text {
+    font-size: 18px;
+  }
+  .mt-5 {
+    margin-top: 0;
+  }
+  #experiences {
+    width: 100%;
+    height: 122vh;
+    padding-top: 55px;
+  }
+  #abp {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 390px) {
+  hr {
+    margin: 0 !important;
+  }
+  .mb-4 {
+    margin-bottom: 0 !important;
+  }
+  .mt-5 {
+    margin-top: 10px !important;
+  }
+  #ul-li {
+    padding: 0 !important;
+  }
+  .skill {
+    padding: 0 20px !important;
+  }
+  .exp {
+    padding: 0 !important;
+  }
+  #experiences {
+    height: 123vh;
+    padding-top: 50px;
+  }
+  .h-about {
+    padding-top: 130px !important;
+    margin-bottom: 180px !important;
+  }
+  #ab {
+    margin-bottom: 180px !important;
+  }
+  .cart {
+    width: 99vw;
+    height: 80vh;
+    background-color: #f8f0e5;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgba(105, 105, 105, 0.3);
+    right: 0px;
+    left: 30px;
+    display: inline-table;
+  }
+}
